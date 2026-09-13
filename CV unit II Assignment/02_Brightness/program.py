@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("input.jpeg")
+img = cv2.imread("input.jpg")
 brightness = 50
 enhanced = np.clip(img.astype(np.int16) + brightness, 0, 255).astype(np.uint8)
 x, y = 100, 100
